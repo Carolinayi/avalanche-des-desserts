@@ -18,7 +18,7 @@ a {
 
 }
 a:link{
-    color: #ffffff;
+    color: #ffb53c;
 }
 a:visited{
     color: #a2db81;
@@ -349,7 +349,7 @@ footer nav ul li a {
 #logo h2{
     display: inline-block;
     font-family: montserratregular, sans-serif;
-    font-size: 125%;
+    font-size: 120%;
 
 }
 
@@ -361,7 +361,7 @@ footer nav ul li a {
 #adresse{
     padding-top: 50px;
     font-family: open_sansregular, sans-serif;
-    font-size: 99%;
+    font-size: 95%;
 }
 
 
