@@ -2,8 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
-        <meta name="description" content=""/>
+        <title>Le meilleur gâteau au chocolat à Montréal - Avalanche de desserts</title>
+        <meta name="description" content="Avalanche de desserts sert le meilleur gâteau au chocolat à Montréal Goûtez nos délicieux gâteaux, tartes,
+        muffins et beaucoup plus! Essayez nos produits fraîchement cuits et des gâteaux personnalisés "/>
         <link rel="stylesheet" href="style/normalize.css"/>
         <link rel="stylesheet" href="style/main.css"/>
         <link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css"/>
@@ -13,10 +14,16 @@
         <meta name="viewport" content="width=device-width, intial-scale=1">
         <meta name="author" content="Sonya Bouchard et Carolina Yi"/>
         <meta name="robots" content="no index, no follow"/>
+        <meta property="og:url" content="wwww.avalanche-de-desserts.projetisi.com"/>
+        <meta property="og:title" content="Le meilleur gâteau au chocolat â Montréal"/>
+        <meta property="og:description" content="Avalanche de desserts sert le meilleur gâteau au chocolat à Montréal Goûtez nos délicieux gâteaux, tartes,
+        muffins et beaucoup plus! Essayez nos produits fraîchement cuits et des gâteaux personnalisés"/>
+        <meta property="og:image" content="images/images-gateaux/meilleur-gateau.jpg"/>
         <!--[if lt IE9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
     </head>
     <body>
         <div id="wrapper">
@@ -25,7 +32,7 @@
                     <div class=" col- col-m-6">
                         <div id="logo">
                             <a href="index.html">
-                                <img src="images/logo.png" alt="logo de la compagnie avalanche de desserts">
+                                <img src="images/image-logo-avalanche-desserts/logo.png" alt="logo de la compagnie avalanche de desserts">
                                 <h2>Avalanche de desserts</h2>
                             </a>
                         </div>
@@ -49,12 +56,12 @@
                 <nav class="responsive-menu">
                     <ul>
                         <li><a href="index.html"><span  class="fa fa-home" aria-hidden="true"></span>accueil</a></li>
-                        <li class="sub-menu"><a href="index.html"><span class="fa fa-birthday-cake" aria-hidden="true"></span>produits<span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <li class="sub-menu"><a href="#"><span class="fa fa-birthday-cake" aria-hidden="true"></span>produits<span class="fa fa-caret-down" aria-hidden="true"></span></a>
                             <ul class="children">
-                                <li><a href="">gâteaux</a></li>
-                                <li><a href="">tartes</a></li>
-                                <li><a href="">muffins</a></li>
-                                <li><a href="">biscuits</a></li>
+                                <li><a href="produit.html">gâteaux</a></li>
+                                <li><a href="index.html">tartes</a></li>
+                                <li><a href="index.html">muffins</a></li>
+                                <li><a href="index.html">biscuits</a></li>
                             </ul>
                         </li>
                         <li><a href="index.html"><span class="fa fa-envelope" aria-hidden="true"></span>contact</a></li>
@@ -80,16 +87,16 @@
                             <div class="inner">
                                 <!--une photo est son texte-->
                                 <div class="photo">
-                                    <img src="images/carousel2.jpg" alt="Photo meduses"/>
+                                    <img src="images/images-carrousel/desserts-uniques.jpg" alt="image de nos délicieuses gâteaux"/>
                                 </div>
                                 <div class="photo">
-                                    <img src="images/carousel3.jpg" alt="Photo tulips"/>
+                                    <img src="images/images-carrousel/gamme-de-desserts.jpg" alt="image de nos succulents desserts"/>
                                 </div>
                                 <div class="photo">
-                                    <img src="images/carousel.jpg" alt="Photo chrisantemo"/>
+                                    <img src="images/images-carrousel/petites-gateaux.jpg" alt="image de notre gamme de desserts uniques"/>
                                 </div>
                                 <div class="photo">
-                                    <img src="images/carousel4.jpg" alt="Photo Koala"/>
+                                    <img src="images/images-carrousel/fraîche-pâtisserie.jpg" alt="image de notre brioche avalanche"/>
                                 </div>
                             </div>
                             <!--END OF INNNER CONTENEUR DE PHOTO ET TEXTE	-->
@@ -106,10 +113,11 @@
                 </section>
                 <section class="row">
                     <div class="col-m-6 col-6">
+                        <h2>À propos de nous</h2>
                         <p id="a-propos">
-                            Bienvenue a notre pâtisserie Avalache de desserts, un de meilleurs endroits sucrés à Montréal.
-                            Ici vous trouverez une gamme des desserts uniques comme: notre fameux gateau au chocolat,
-                            nos buiscuits artissanales aux chocolats, et nos riches muffins.
+                            Bienvenue a notre pâtisserie Avalache de desserts<strong class="seo">un de meilleurs endroits sucrés à Montréal.</strong>
+                            Ici vous trouverez <em class="seo">une gamme des desserts uniques</em> comme: <strong class="seo">notre fameux gateau au chocolat,</strong>
+                            <strong class="seo">nos buiscuits artissanales aux chocolats,</strong> et nos riches muffins.
                             Nous faisons des gâteaux personnalisés pour votre occassion spéciale.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur
                             cum debitis dignissimos doloremque eligendi et id impedit inventore iste iusto mollitia,
@@ -118,16 +126,14 @@
                             maxime officia quia quibusdam quos reiciendis, sequi soluta ut! Ducimus facilis recusandae voluptas?
                         </p>
 
-
                     </div>
                     <div class="col-m-6 col-6">
                         <!--insere plusieurs sources de video-->
-                        <video controls muted poster="images/gateaux-mangue.png">
+                        <video controls muted poster="images/images-gateaux/gateau-choco-creme.jpg">
                             <source src="video/sailboats.ogg" type="video/ogg"/>
                             <source src="video/sailboats_x264.mp4" type="video/mp4"/>
                             <source src="video/sailboats.webm" type="video/webm"/>
                         </video>
-
 
                     </div>
                 </section>
@@ -137,15 +143,15 @@
                         <div class="col-m-6 col-3">
                             <div class="row produit">
                                 <div class="col-m-6 col-12">
-                                    <img src="images/gateau-fraises.jpg" alt="image du gateaux"/>
+                                    <img src="images/images-gateaux/gateau-chocolat-fraises.jpg" alt="image du gateau au chocolat et fraises"/>
                                 </div>
                                 <div class="col-m-6 col-12">
-                                    <h2>Title</h2>
+                                    <h2>Gâteau au chocolat et fraises</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi culpa deleniti deserunt dolor dolore doloremque
                                         ex illum ipsam neque officiis quia quo similique, sit temporibus? Doloribus ducimus perspiciatis quos.
                                     </p>
                                     <div class="details">
-                                        <a href="">Détails</a>
+                                        <a href="details.html">Détails</a>
                                     </div>
                                 </div>
                             </div>
@@ -153,15 +159,15 @@
                         <div class="col-m-6 col-3">
                             <div class="row produit">
                                 <div class="col-m-6 col-12">
-                                    <img src="images/gateaux-mangue.png" alt="image du gateaux"/>
+                                    <img src="images/images-gateaux/meilleur-gateau.jpg" alt="image de notre meilleur gateau à Avalanche de desserts"/>
                                 </div>
                                 <div class="col-m-6 col-12">
-                                    <h2>Title</h2>
+                                    <h2>Gâteau au chocolat Suprême</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi culpa deleniti deserunt dolor dolore doloremque
                                         ex illum ipsam neque officiis quia quo similique, sit temporibus? Doloribus ducimus perspiciatis quos.
                                     </p>
                                     <div class="details">
-                                        <a href="">Détails</a>
+                                        <a href="details.html">Détails</a>
                                     </div>
                                 </div>
                             </div>
@@ -169,31 +175,31 @@
                         <div class="col-m-6 col-3">
                             <div class="row produit">
                                 <div class="col-m-6 col-12">
-                                    <img src="images/gateaux-chocolat-delicieux.jpg" alt="image du gateaux"/>
+                                    <img src="images/images-gateaux/gateau-fraises.jpg" alt="image du gateau aux fraises"/>
                                 </div>
                                 <div class="col-m-6 col-3 col-12">
-                                    <h2>Title</h2>
+                                    <h2>Gâteau au chocolat et fraises</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi culpa deleniti deserunt dolor dolore doloremque
                                         ex illum ipsam neque officiis quia quo similique, sit temporibus? Doloribus ducimus perspiciatis quos.
                                     </p>
                                     <div class="details" >
-                                        <a href="">Détails</a>
+                                        <a href="details.html">Détails</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-m-6 col-3">
-                            <div class="row produit">
+                            <div class="row produit dernier-produit">
                                 <div class="col-m-6 col-12">
-                                    <img src="images/mejorado2.jpg" alt="image du gateaux"/>
+                                    <img src="images/images-gateaux/gateau_lune.jpg" alt="image de notre gàteau lune "/>
                                 </div>
                                 <div class="col-m-6 col-12">
-                                    <h2>Title</h2>
+                                    <h2>Gâteau au chocolat et mangue</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi culpa deleniti deserunt dolor dolore doloremque
                                         ex illum ipsam neque officiis quia quo similique, sit temporibus? Doloribus ducimus perspiciatis quos.
                                     </p>
                                     <div class="details">
-                                        <a href="">Détails</a>
+                                        <a href="details.html">Détails</a>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +213,7 @@
                         <div  id="footer-menu" class="row">
                             <ul class="col-m-6 col-6">
                                 <li><a href="index.html">accueil</a></li>
-                                <li><a href="details.html">gâteaux</a></li>
+                                <li><a href="produit.html">gâteaux</a></li>
                                 <li><a href="index.html">tartes</a></li>
                             </ul>
                             <ul class="col-m-6 col-6">
@@ -231,12 +237,12 @@
                         </ul>
                     </div>
                     <div id="reseaux-sociaux" class="col-m-12 col-4">
-                        <a href=""><img src="images/social/facebook.png" alt="image facebook"/></a>
-                        <a href=""><img src="images/social/instagram.png" alt="image instagram"/></a>
-                        <a href=""><img src="images/social/twitter.png" alt="image twitter"/></a>
-                        <a href=""><img src="images/social/youtube.png" alt="image youtube"/></a>
+                        <a href="https://www.facebook.com"><img src="images/social/facebook.png" alt="image facebook"/></a>
+                        <a href="https://www.instagram.com"><img src="images/social/instagram.png" alt="image instagram"/></a>
+                        <a href="https://twitter.com"><img src="images/social/twitter.png" alt="image twitter"/></a>
+                        <a href="https://www.youtube.com"><img src="images/social/youtube.png" alt="image youtube"/></a>
                         <p>Ce site web a été réalisé dans le cadre d'un projet d'étude.</p>
-                        <a href="#"><img  id= top src="images/top.png" alt="image fleche vers l'haut"/></a>
+                        <a href="#"><img  id= top src="images/image%20fleche/top.png" alt="image fleche vers l'haut"/></a>
 
                     </div>
                 </div>
