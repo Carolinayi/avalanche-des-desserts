@@ -17,9 +17,30 @@ a {
     color: white;
 
 }
+a:link{
+    color: #ffffff;
+}
+a:visited{
+    color: #a2db81;
+}
+
+a:hover{
+    color: #d33e34;
+}
+
+a:active{
+    color: #7bb4ff;
+}
+
+em.seo, strong.seo{
+    font-style: normal;
+    font-weight: normal;
+}
+
 /*******END RESET CSS*************/
 
 /********VERSION MOBILE***********/
+/*********************PAGE ACCUEIL**********************************/
 
 /********************HEADER*****************************************/
 #logo{
@@ -38,7 +59,7 @@ a {
     display: block;
     margin-left: 5px;
     vertical-align: middle;
-    color: #00b3ff;
+    color: #ffffff;
     font-family:  montserratregular, sans-serif;
     font-size: 150%;
 }
@@ -53,14 +74,16 @@ a {
     text-align: center;
     font-family:  open_sansregular, sans-serif;
     font-size: 110%;
+    color: #ffffff;
 }
 
 header{
     width: 100%;
+    background-color: #3d1901;
 }
 
 header nav {
-    background-color: #00b3ff;
+    background-color:  #3d1901;
     z-index: 1000;
     width: 100%;
 
@@ -68,7 +91,7 @@ header nav {
 }
 
 header .nav-mobile{
-    background-color: #00b3ff;
+    background-color: #3d1901;
     font-family: open_sansregular, sans-serif;
     font-size: 90%;
     text-transform: uppercase;
@@ -108,7 +131,7 @@ header nav ul li a span{
 }
 
 header nav ul li:hover{
-    background-color: #525A93;
+    background-color: #d29bb9;
 
 }
 header nav ul li:hover .children{
@@ -117,7 +140,7 @@ header nav ul li:hover .children{
 
 header nav ul li .children {
     display: none;
-    background-color: #00b3ff;
+    background-color: #3d1901;
     position: relative;
     z-index: 1000;
 }
@@ -133,7 +156,7 @@ header nav ul li .children li a {
     margin-left: 30px;
 }
 #search:hover{
-    background-color: #525A93;
+    background-color: #d29bb9;
 }
 #search{
     display: inline-block;
@@ -181,18 +204,30 @@ img{
     width:100%;
 }
 
+
+.produit{
+    border-bottom: 1px dashed #3d1901;
+}
+
+.dernier-produit{
+    border-bottom: none;
+}
+
 .produit p{
     text-align: justify;
     font-family: open_sansregular, sans-serif;
     font-size: 110%;
 }
+
+
+
 .details a{
-   background-color: #00b3ff;
+   background-color: #3d1901;
    float: right;
    padding: 15px;
-
-
 }
+
+
 
 .details:after{
    content: "";
@@ -200,11 +235,31 @@ img{
    display: block;
 }
 
+/****************PAGE PRODUIT********************************/
+#menu-aside{
+    display: none;
+}
+
+aside ul {
+    height: 50px;
+
+}
+
+aside ul li{
+    height: 100%;
+}
+aside ul li a{
+    color: #3d1901;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 
 /******************FOOTER*************************************/
 footer{
     margin-top: 20px;
-    background-color: #00b3ff;
+    background-color: #3d1901;
 
 }
 
@@ -220,6 +275,11 @@ footer nav ul li{
     width: 100%;
     text-align: center;
 }
+
+footer nav ul li:hover{
+    background-color: #d29bb9;
+
+}
 footer nav ul li a {
     display: block;
     text-transform: uppercase;
@@ -227,6 +287,7 @@ footer nav ul li a {
     height: 100%;
     font-family: open_sansregular, sans-serif;
     font-size: 100%;
+    font-weight: bold;
 }
 
 
@@ -234,6 +295,7 @@ footer nav ul li a {
     text-align: center;
     font-family: open_sansregular, sans-serif;
     font-size: 100%;
+    color: #ffffff;
 
 }
 #heures-ouverture ul li{
@@ -254,6 +316,7 @@ footer nav ul li a {
 #reseaux-sociaux p{
     font-family: open_sansregular, sans-serif;
     font-size: 100%;
+    color: #ffffff;
 }
 
 #top{
@@ -261,375 +324,425 @@ footer nav ul li a {
     bottom: 100px;
     right: 20px;
 }
-/************************VERSION TABLETTE*************************************/
+@keyframes fleche-animation {
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
 
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+
+#top{
+    animation: fleche-animation 2s infinite;
+}
+/************************VERSION TABLETTE*************************************/
+/*************************PAGE ACCUEIL***************************************/
 @media only screen and (min-width: 768px) {
 
-    /***********HEADER*******/
-    #logo h2{
-        display: inline-block;
-        font-family: montserratregular, sans-serif;
-        font-size: 125%;
+/***********HEADER*******/
+#logo h2{
+    display: inline-block;
+    font-family: montserratregular, sans-serif;
+    font-size: 125%;
 
-    }
+}
 
-    #logo{
-        text-align: left;
-        padding: 25px 25px 25px 0;
-    }
+#logo{
+    text-align: left;
+    padding: 25px 25px 25px 0;
+}
 
-    #adresse{
-        padding-top: 50px;
-        font-family: open_sansregular, sans-serif;
-        font-size: 99%;
-    }
-
-
-    header nav {
-        background-color: #00b3ff;
-        z-index: 1000;
-        width: 100%;
-
-    }
-    .nav-mobile{
-        display: none;
-    }
-
-    header nav ul {
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav ul li{
-        position: relative;
-        display: inline-block;
-        width: 24%;
-        text-align: center;
-
-    }
-
-    header nav ul li .children {
-        display: none;
-        background-color: #00b3ff;
-        position: absolute;
-        z-index: 1000;
-    }
-
-    header nav ul li:hover .children{
-        display: block;
-        width: 100%;
-    }
-
-    header nav ul li .children li a {
-        width: 100%;
-        margin: 0;
-    }
-
-    #search{
-        width: 24%;
-
-    }
-    /*******************BODY******************************/
-    /*****CONFIGURATION DE SLIDER******/
-    /*1*cacher ce qui deborde***/
-    #slider{
-        display: block;
-    }
-    #overflow{
-        width: 100%;
-        overflow: hidden;/*on cache ce qui depasse*/
-
-    }
-
-    /**2**chaque img occupe 100% de son parent la div .photo*/
-
-    .photo img{
-        width: 100%;
-
-    }
+#adresse{
+    padding-top: 50px;
+    font-family: open_sansregular, sans-serif;
+    font-size: 99%;
+}
 
 
-    /*3**la div .inner fait une largeur egale au nombre de photos: 5 donc 500%****/
+header nav {
+    background-color: #3d1901;
+    z-index: 1000;
+    width: 100%;
 
-    #slides .inner{
-        width: 400%;
-    }
+}
+.nav-mobile{
+    display: none;
+}
 
-    /*4***on va aligner les div .photo les une a cote des autres**/
+header nav ul {
+    width: 100%;
+    text-align: center;
+}
 
-    #slides .photo{
-        float: left;
-        width: 25%;/*chaque div.photo occupe 1/5 eme de son parent car 5 photos si 4 photos ce serait 1/4*/
-        position: relative;/*afin de placer le h3 par rapport a la div.photo*/
-    }
+header nav ul li{
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
 
-    /*on style le h3 et on le place sur la photo*/
+}
+
+header nav ul li .children {
+    display: none;
+    background-color: #3d1901;
+    position: absolute;
+    z-index: 1000;
+}
+
+header nav ul li:hover .children{
+    display: block;
+    width: 100%;
+}
+
+header nav ul li .children li a {
+    width: 100%;
+    margin: 0;
+}
+
+#search{
+    width: 24%;
+
+}
+/*******************BODY******************************/
+/*****CONFIGURATION DE SLIDER******/
+/*1*cacher ce qui deborde***/
+#slider{
+    display: block;
+}
+#overflow{
+    width: 100%;
+    overflow: hidden;/*on cache ce qui depasse*/
+
+}
+
+/**2**chaque img occupe 100% de son parent la div .photo*/
+
+.photo img{
+    width: 100%;
+
+}
 
 
-    /**************************/
-    /**FONCTIONNEMENT**/
+/*3**la div .inner fait une largeur egale au nombre de photos: 5 donc 500%****/
 
-    /*1 **on cachae les input*****/
+#slides .inner{
+    width: 400%;
+}
 
-     #slider input{
-        display: none;
+/*4***on va aligner les div .photo les une a cote des autres**/
 
-    }
+#slides .photo{
+    float: left;
+    width: 25%;/*chaque div.photo occupe 1/5 eme de son parent car 5 photos si 4 photos ce serait 1/4*/
+    position: relative;/*afin de placer le h3 par rapport a la div.photo*/
+}
 
-    /*2 on position la div inner en fonction du label sur lequel on clique**/
-    /**quand on clique sur le label de l'input #slide1 la div .inner se place à une marge gauche de 0*/
-    #slide1:checked ~ #slides .inner{
-        margin-left: 0;
-
-    }
-    /**quand on clique sur le label de l'input #slide2 la div .inner se place à une marge gauche de -100%*/
-
-    #slide2:checked ~ #slides .inner {
-        margin-left: -100%;
-    }
+/*on style le h3 et on le place sur la photo*/
 
 
-    #slide3:checked ~ #slides .inner {
-        margin-left: -200%;
-    }
+/**************************/
+/**FONCTIONNEMENT**/
 
-    #slide4:checked ~ #slides .inner {
-        margin-left: -300%;
-    }
+/*1 **on cachae les input*****/
 
-    /**on applique une transition sur la div .inner pour qu'elle se déplace*/
+ #slider input{
+    display: none;
 
-    #slides .inner{
-        transition: all 1s ease-in-out;
-    }
+}
+
+/*2 on position la div inner en fonction du label sur lequel on clique**/
+/**quand on clique sur le label de l'input #slide1 la div .inner se place à une marge gauche de 0*/
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;
+
+}
+/**quand on clique sur le label de l'input #slide2 la div .inner se place à une marge gauche de -100%*/
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
 
 
-    /******************STYLES***********/
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
 
-    /*on style les labels**/
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
 
-    #active label{
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
-        background: grey;
-        display: inline-block;
-        margin: 10px 5px;
-    }
+/**on applique une transition sur la div .inner pour qu'elle se déplace*/
 
-    #active{
-        text-align: center;/*on centre les labels*/
-    }
-/*************BODY***************************************/
-    h1{
-        padding-top: 10px;
-        font-family: ubuntumedium, sans-serif;
-        font-size: 170%;
-    }
-    #a-propos{
-        padding-top: 35px;
-    }
-    video{
-        min-width:70% ;
-        float: right;
-        vertical-align: bottom;
-    }
+#slides .inner{
+    transition: all 1s ease-in-out;
+}
 
-    .produit p{
-        text-align: left;
-    }
+
+/******************STYLES*DE BOUTONS POUR SLIDER**********/
+
+/*on style les labels**/
+
+#active label{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: grey;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+#active{
+    text-align: center;/*on centre les labels*/
+}
+
+h1{
+    padding-top: 10px;
+    font-family: ubuntumedium, sans-serif;
+    font-size: 170%;
+}
+#a-propos{
+    padding-top: 35px;
+}
+video{
+    min-width:70% ;
+    float: right;
+    vertical-align: bottom;
+}
+
+.produit p{
+    text-align: left;
+}
+
+
+/***********PAGE PRODUITS*********************************************/
+#menu-aside{
+    display: block;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top:250px;
+    left: 100px;
+    z-index: inherit;
+    font-weight: bold;
+}
+
+
+#section-float > section{
+    float: right;
+}
+
+.produit-margin{
+    margin-bottom: 40px;
+}
+
+
+.produit{
+    border-bottom: none;
+}
+
 /**********************SYSTEM DE GRILLES*******************/
-    .col-m-1{
-        width:8.33%;
+.col-m-1{
+    width:8.33%;
 
-    }
+}
 
-    .col-m-2{
+.col-m-2{
 
-        width:16.66%;
+    width:16.66%;
 
-    }
+}
 
-    .col-m-3{
-        width:25%;
+.col-m-3{
+    width:25%;
 
-    }
+}
 
-    .col-m-4{
-        width:33.33%;
-    }
+.col-m-4{
+    width:33.33%;
+}
 
-    .col-m-5{
-        width:41.66%;
-    }
-    .col-m-6{
-        width:50%;
-    }
-    .col-m-7{
-        width:58.33%;
-    }
-    .col-m-8{
-        width:66.66%;
-    }
-    .col-m-9{
-        width:75%;
-    }
-    .col-m-10{
-        width:83.33%;
-    }
-    .col-m-11{
-        width:91.66%;
-    }
-    .col-m-12{
-        width:100%;
-    }
+.col-m-5{
+    width:41.66%;
+}
+.col-m-6{
+    width:50%;
+}
+.col-m-7{
+    width:58.33%;
+}
+.col-m-8{
+    width:66.66%;
+}
+.col-m-9{
+    width:75%;
+}
+.col-m-10{
+    width:83.33%;
+}
+.col-m-11{
+    width:91.66%;
+}
+.col-m-12{
+    width:100%;
+}
 
-    #wrapper{
-        width:100%;
-    }
+#wrapper{
+    width:100%;
+}
 
-    [class*="col-"] {
-        float: left;
-        padding: 0 15px;
-    }
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
 
-    .row:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
 
-    /***********FOOTER*************/
-    #heures-ouverture{
-        padding-top: 20px;
-    }
-    #reseaux-sociaux img{
-        width: 50px;
-    }
+/***********FOOTER*************/
+#heures-ouverture{
+    padding-top: 20px;
+}
+#reseaux-sociaux img{
+    width: 45px;
+}
 
 }
 
 /*************************************VERSION DESKTOP********************************/
 
 @media only screen and (min-width: 960px){
-
+/***********************PAGE ACCUEIL******************/
 /******************HEADER*********************/
-    #logo{
-        text-align: left;
-        padding: 25px 25px 25px 0;
-    }
-
-    #logo h2{
-        display: inline-block;
-        font-family: montserratregular, sans-serif;
-        font-size: 150%;
-    }
-
-    #adresse{
-        font-family: open_sansregular, sans-serif;
-        font-size: 100% ;
-    }
-
-
-
-
-
-    .col-1 {width: 8.33%;}
-
-    /*largeur de 2 colonnes*/
-    .col-2 {width: 16.66%;}
-
-    /*largeur de 3 colonnes*/
-    .col-3 {width: 25%;}
-
-    /*largeur de 4 colonnes*/
-    .col-4 {width: 33.33%;}
-
-    /*largeur de 5 colonnes*/
-    .col-5 {width: 41.66%;}
-
-    /*largeur de 6 colonnes*/
-    .col-6 {width: 50%;}
-
-    /*largeur de 7 colonnes*/
-    .col-7 {width: 58.33%;}
-
-    /*largeur de 8 colonnes*/
-    .col-8 {width: 66.66%;}
-
-    /*largeur de 9 colonnes*/
-    .col-9 {width: 75%;}
-
-    /*largeur de 10 colonnes*/
-    .col-10 {width: 83.33%;}
-
-    /*largeur de 11 colonnes*/
-    .col-11 {width: 91.66%;}
-
-    /*largeur de 12 colonnes*/
-    .col-12 {width: 100%;}
-
-
-    [class*="col-"] {
-        float: left;
-        padding: 0 15px;
-    }
-
-
-    .row:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-    /**********************BODY********************/
-    #wrapper{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    video{
-        max-width: 450px;
-    }
-
-    h1{
-        font-family: ubuntumedium, sans-serif;
-        font-size: 190%;
-
-    }
-    .produit p{
-        text-align: justify;
-    }
-    /***********FOOTER**************/
-    footer nav ul li{
-        padding-top: 0;
-    }
-
-    #heures-ouverture{
-        padding-top: 6px;
-    }
-    #reseaux-sociaux{
-        padding-top: 30px;
-    }
+#logo{
+    text-align: left;
+    padding: 25px 25px 25px 0;
 }
 
-/**************************PAGE DETAILS*************************/
-
-aside{
-    padding-top: 50px;
-}
-aside ul {
-    height: 50px;
-
-}
-
-aside ul li{
-
-    height: 100%;
-}
-aside ul li a{
-    color: #00b3ff;
+#logo h2{
     display: inline-block;
-    width: 100%;
-    height: 100%;
+    font-family: montserratregular, sans-serif;
+    font-size: 121%;
 }
+
+#adresse{
+    font-family: open_sansregular, sans-serif;
+    font-size: 95% ;
+}
+
+    /**********************BODY**PAGE ACCUEIL******************/
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+video{
+    max-width: 450px;
+}
+
+h1{
+    font-family: ubuntumedium, sans-serif;
+    font-size: 190%;
+
+}
+
+.produit{
+    border-bottom: none;
+}
+
+.produit p{
+    text-align: justify;
+}
+/***********FOOTER**************/
+footer nav ul li{
+    padding-top: 0;
+}
+
+#heures-ouverture{
+    padding-top: 6px;
+}
+#reseaux-sociaux{
+    padding-top: 30px;
+}
+
+/**************************SYSTEME DE GRILLE***********************/
+
+.col-1 {width: 8.33%;}
+
+/*largeur de 2 colonnes*/
+.col-2 {width: 16.66%;}
+
+/*largeur de 3 colonnes*/
+.col-3 {width: 25%;}
+
+/*largeur de 4 colonnes*/
+.col-4 {width: 33.33%;}
+
+/*largeur de 5 colonnes*/
+.col-5 {width: 41.66%;}
+
+/*largeur de 6 colonnes*/
+.col-6 {width: 50%;}
+
+/*largeur de 7 colonnes*/
+.col-7 {width: 58.33%;}
+
+/*largeur de 8 colonnes*/
+.col-8 {width: 66.66%;}
+
+/*largeur de 9 colonnes*/
+.col-9 {width: 75%;}
+
+/*largeur de 10 colonnes*/
+.col-10 {width: 83.33%;}
+
+/*largeur de 11 colonnes*/
+.col-11 {width: 91.66%;}
+
+/*largeur de 12 colonnes*/
+.col-12 {width: 100%;}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
+
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/**************PAGE***PRODUIT*********/
+
+#menu-aside{
+    display: block;
+    left: 180px;
+}
+
+.produit{
+    border-bottom: none;
+}
+
+
+.produit p{
+    text-align: left;
+}
+
+
+}
+
+
+
+
+
